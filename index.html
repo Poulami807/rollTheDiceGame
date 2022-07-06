@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Roll the dice</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game">
+        <div class="heading">
+            <h1>Roll the dice</h1>
+            <h4>Target value:30</h4>
+        </div>
+        <div class="box">
+          <div class="inputdiv">
+            <input id="in" type="number" />
+            <button id="btn" onclick="rollDice()">Roll</button>
+          </div>
+          <p id="out" style="color: white;"></p>
+        </div>
+      </div>
+      <div class="leaderboard">
+        <h3>LEADER BOARD</h3>
+        <table id="leader">
+            <thead height="50px">
+                <th>User</th>
+                <th>Computer</th>
+                <th>Leading</th>
+              </thead>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
